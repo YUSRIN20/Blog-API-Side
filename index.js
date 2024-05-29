@@ -30,7 +30,8 @@ mongoose.connection.on("disconnected",()=>{
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: 'http://localhost:3500',  // replace with your front-end domain
+    // origin: 'http://localhost:3500',  // replace with your front-end domain
+    origin: 'https://simpleblog-website.netlify.app',  // replace with your front-end domain
     credentials: true
 }))
 app.options('*',cors())
